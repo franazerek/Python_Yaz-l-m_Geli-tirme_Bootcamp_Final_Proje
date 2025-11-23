@@ -8,6 +8,7 @@ a:focus {
     box-shadow: none !important;
 }
 
+html,
 body {
     font-family: 'Poppins', sans-serif;
     background: linear-gradient(135deg, #e39ff6, #ff7899);
