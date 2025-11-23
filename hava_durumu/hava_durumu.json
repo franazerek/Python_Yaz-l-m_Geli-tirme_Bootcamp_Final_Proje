@@ -1,0 +1,51 @@
+[
+  {
+    "tarih": "23/11/2025 22:46",
+    "sehir": "İstanbul",
+    "sicaklik": 16.2,
+    "nem": 82,
+    "durum": "parçalı bulutlu"
+  },
+  {
+    "tarih": "23/11/2025 22:46",
+    "sehir": "Adana",
+    "sicaklik": 16.01,
+    "nem": 55,
+    "durum": "açık"
+  },
+  {
+    "tarih": "23/11/2025 22:46",
+    "sehir": "İzmir",
+    "sicaklik": 17.97,
+    "nem": 72,
+    "durum": "parçalı bulutlu"
+  },
+  {
+    "tarih": "23/11/2025 22:52",
+    "sehir": "İzmir",
+    "sicaklik": 17.97,
+    "nem": 72,
+    "durum": "parçalı bulutlu"
+  },
+  {
+    "tarih": "23/11/2025 22:54",
+    "sehir": "İzmir",
+    "sicaklik": 17.97,
+    "nem": 72,
+    "durum": "parçalı bulutlu"
+  },
+  {
+    "tarih": "23/11/2025 22:54",
+    "sehir": "Muğla",
+    "sicaklik": 11.38,
+    "nem": 93,
+    "durum": "kapalı"
+  },
+  {
+    "tarih": "23/11/2025 22:59",
+    "sehir": "Bursa",
+    "sicaklik": 11.44,
+    "nem": 85,
+    "durum": "kapalı"
+  }
+]

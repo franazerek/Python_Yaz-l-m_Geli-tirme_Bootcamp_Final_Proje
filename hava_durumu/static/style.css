@@ -1,0 +1,113 @@
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #0a0f1f, #16213e, #1b263b);
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 420px;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.06);
+    backdrop-filter: blur(12px);
+    border-radius: 18px;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.35);
+}
+
+
+/* Başlık */
+
+.container h2 {
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+
+/* Input */
+
+input[type="text"] {
+    width: 100%;
+    padding: 14px;
+    background: #e4e6eb;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    margin-bottom: 12px;
+}
+
+
+/* Buton */
+
+button {
+    width: 100%;
+    padding: 12px;
+    background: #1b3764;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.25s;
+}
+
+button:hover {
+    background: #274c77;
+}
+
+
+/* Kayıtlar */
+
+a {
+    margin-top: 15px;
+    display: block;
+    font-size: 14px;
+    color: #9db4ff;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #fff;
+}
+
+
+/* Hata */
+
+.error-box {
+    margin-top: 20px;
+    background: rgba(255, 75, 75, 0.15);
+    border-left: 4px solid #ff5c5c;
+    padding: 12px;
+    border-radius: 6px;
+    color: #ffb3b3;
+}
+
+
+/* Sonuç */
+
+.weather-box {
+    margin-top: 25px;
+    padding: 20px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.weather-box h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.weather-box p {
+    opacity: 0.95;
+    font-size: 15px;
+}

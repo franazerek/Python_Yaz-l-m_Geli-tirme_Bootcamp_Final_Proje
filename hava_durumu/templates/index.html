@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>HAVA DURUMU SİMÜLASYONU</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>🌤️ Hava Durumu Portalı</h2>
+
+        <form method="POST">
+            <input type="text" name="city" placeholder="Şehir adı..." required>
+            <button type="submit">Sorgula</button>
+            <a href="{{ url_for('kayitlar') }}" style="color:#fff; text-decoration:underline; display:block; margin-top:15px;">
+    📁 Kayıtlı hava durumu verilerini gör
+</a>
+        </form>
+
+        {% if error %}
+        <div class="error-box">
+            <strong>⚠ Hata:</strong> {{ error }}
+        </div>
+        {% endif %} {% if weather %}
+        <div class="weather-box">
+            <h3>{{ weather.city }}</h3>
+            <p>🌡 Sıcaklık: {{ weather.temp }}°C</p>
+            <p>🌥 Açıklama: {{ weather.desc }}</p>
+            <p>💧 Nem: %{{ weather.humidity }}</p>
+            <p>💨 Rüzgar: {{ weather.wind }} km/sa</p>
+        </div>
+        {% endif %}
+    </div>
+
+</body>
+
+</html>
