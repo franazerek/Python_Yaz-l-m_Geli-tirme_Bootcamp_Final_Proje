@@ -47,5 +47,12 @@
     "sicaklik": 11.44,
     "nem": 85,
     "durum": "kapalı"
+  },
+  {
+    "tarih": "23/11/2025 23:04",
+    "sehir": "Edirne",
+    "sicaklik": 11.89,
+    "nem": 78,
+    "durum": "açık"
   }
 ]
