@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Yapılacaklar Listesi</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+    <div class="container">
+
+        <h1>Yapılacaklar Listesi</h1>
+
+        <form action="{{ url_for('add') }}" method="POST">
+            <input type="text" name="baslik" placeholder="Yeni görev başlığı..." required>
+            <textarea name="aciklama" placeholder="Açıklama (opsiyonel)"></textarea>
+            <button class="add-btn">Ekle</button>
+        </form>
+
+        <div class="info">
+            YAPILACAK {{ gorev_listesi|selectattr('tamamlandi', 'equalto', false)|list|length }} kadar iş var<br> Tamamlanan görev sayısı: {{ gorev_listesi|selectattr('tamamlandi', 'equalto', true)|list|length }}
+        </div>
+
+        {% for todo in gorev_listesi %}
+        <div class="todo-card">
+
+            <!-- DOĞRU ALANLAR -->
+            <span class="todo-title {% if todo.tamamlandi %}complete{% endif %}">
+            {{ todo.baslik }}
+        </span> {% if todo.aciklama %}
+            <div class="todo-desc {% if todo.tamamlandi %}complete{% endif %}">
+                {{ todo.aciklama }}
+            </div>
+            {% endif %}
+
+            <div>
+                <a href="{{ url_for('update', gorev_id=todo.id) }}">
+                    <button class="btn btn-done">
+                    {% if todo.tamamlandi %}Geri Al{% else %}Tamamla{% endif %}
+                </button>
+                </a>
+
+                <a href="{{ url_for('delete', gorev_id=todo.id) }}">
+                    <button class="btn btn-delete">Sil</button>
+                </a>
+            </div>
+
+        </div>
+        {% endfor %}
+
+    </div>
+</body>
+
+</html>

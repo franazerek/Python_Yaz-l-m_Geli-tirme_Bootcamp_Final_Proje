@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+button:focus,
+button:active,
+input:focus,
+textarea:focus,
+a:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #e39ff6, #ff7899);
+    margin: 0;
+    padding: 40px 0;
+}
+
+.container {
+    max-width: 650px;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(10px);
+    padding: 50px 30px;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(255, 0, 170, 0.1);
+}
+
+h1 {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    color: #3b0066;
+    margin-bottom: 30px;
+}
+
+input,
+textarea {
+    width: 100%;
+    border-radius: 12px;
+    border: none;
+    padding: 14px 18px;
+    font-size: 15px;
+    margin-bottom: 18px;
+    box-sizing: border-box;
+}
+
+textarea {
+    height: 100px;
+    resize: none;
+}
+
+.add-btn {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    background: #7e28ff;
+    color: white;
+    border-radius: 12px;
+    font-size: 17px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.todo-card {
+    background: white;
+    padding: 16px 20px;
+    border-radius: 12px;
+    margin: 12px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 14px rgba(255, 0, 179, 0.1);
+}
+
+.todo-title {
+    font-size: 16px;
+    font-weight: 500;
+    color: #333 !important;
+    max-width: 70%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.todo-desc {
+    font-size: 14px;
+    color: #555;
+    margin-top: 6px;
+    opacity: 0.8;
+    max-width: 70%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.complete {
+    text-decoration: line-through;
+    opacity: 0.6;
+}
+
+.btn {
+    padding: 6px 12px;
+    font-size: 14px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    margin-left: 5px;
+    font-weight: 600;
+}
+
+.btn-done {
+    background: #bd0990;
+    color: white;
+}
+
+.btn-delete {
+    background: #f12271;
+    color: white;
+}
+
+.info {
+    margin-top: 25px;
+    font-weight: 600;
+    color: #3b0066;
+}
